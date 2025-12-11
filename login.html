@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Review Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #18233c;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 16px;
+      width: 360px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #334155;
+      color: white;
+      font-size: 14px;
+    }
+    input:focus {
+      outline: 2px solid #38bdf8;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 8px;
+      color: #334162;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+    .link {
+      margin-top: 15px;
+      display: block;
+      color: #93c5fd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="login-container">
+    <h2>TechWorld login page</h2>
+
+    <form onsubmit="openHome(); return false;">
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <!-- Login button triggers JS function -->
+      <button type="submit">Login</button>
+    </form>
+
+    <a href="#" class="link">Forgot Password?</a>
+    <a href="signup.html" class="link">Create New Account</a>
+  </div>
+
+  <script>
+    // When Login is clicked, this runs
+    function openHome() {
+      let email = document.getElementById("email").value;
+      let pass = document.getElementById("password").value;
+
+      if (email !== "" && pass !== "") {
+        // Open vivek.html after entering email + password
+        window.location.href = "vivek.html";
+      }
+    }
+  </script>
+
+</body>
+</html>

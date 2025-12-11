@@ -1,0 +1,113 @@
+/* Basic page design */
+body {
+  font-family: Arial, sans-serif;
+  background: #303c3f;
+  margin: 0;
+  padding: 0;
+  
+.roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+}
+
+/* Header */
+header {
+  background: #111312;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 25px 10px;
+}
+
+/* Navigation bar */
+nav {
+  background: #ff0000;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background: #fffcfc;
+
+}
+
+/* Sections */
+section {
+  background: rgb(194, 201, 202);
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(221, 37, 37, 0.1);
+}
+h2 {
+  color: #000000;
+}
+
+/* Topics list */
+.topics ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.topics li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.course-col{
+  background: #5a5858;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+/* Footer */
+footer {
+  background: #5a5858;
+  color: rgb(238, 238, 238);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.card{
+  flex-basis: 45%;
+  background: #338f70;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(101, 97, 97, 0.1);
+}
+.card img{
+  display: block;
+  margin: 0 auto;
+  align-items:end;
+  box-shadow: 0 0 8px rgba(83, 77, 77, 0.1);
+}
+course-col {
+  flex-basis: 30%;
+  background: #f3f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(101, 97, 97, 0.1);
+}
+course-col img{
+  display: block;
+  margin: 0 auto;
+  align-items:end;
+  box-shadow: 0 0 8px rgba(83, 77, 77, 0.1);
+}

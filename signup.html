@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Tech Product Reviews</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-container {
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 16px;
+      width: 380px;
+      box-shadow: 0 4px 20px rgba(84, 51, 51, 0.3);
+      text-align: center;
+    }
+    h2 {
+      color: #f8fafc;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #334155;
+      color: white;
+      font-size: 14px;
+    }
+    input:focus {
+      outline: 2px solid #38bdf8;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 8px;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+    .link {
+      margin-top: 15px;
+      display: block;
+      color: #93c5fd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create Your Account</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Create Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <a href="login.html" class="link">Already have an account? Login</a>
+    <a href="login.html" class="link">Sign Up</a>
+  </div>
+</body>
+</html>
